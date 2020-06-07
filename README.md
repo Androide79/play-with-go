@@ -31,6 +31,14 @@ You can output print additional information about test function using verbose *-
     go test -v
 
 If you log something in your tests with the ***-v*** will be shown, otherwise no.
+In case you have more than one packages and you want to execute all tests of every package at one time you can run in your base project directory
+
+    go test ./...
+
+with *./...* goes through each package and runs the test files.
+Or if you need to test a particular package, just run the command
+
+    go test ***package name***
 
 ### Test Coverage <a name="tests_coverage"></a>
 
