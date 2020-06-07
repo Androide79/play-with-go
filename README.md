@@ -43,6 +43,11 @@ The output show you the coverage percentage. To see specifically which parts of 
     go test -coverprofile=coverage.txt
 
 where coverage.txt is the file in which the covered parts of code will be written.
+To have a more human readable output we can use a built-in GO tool, which generates an output in HTML format
+
+    go tool cover -html=coverage.txt -o coverage.html
+
+using the TXT output, previously seen, creates a more readable HTML page.
 
 ## AUTHOR <a name="author"></a>
 [Pierluigi D'Antona](https://www.pierluigidantona.it)
