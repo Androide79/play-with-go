@@ -35,10 +35,10 @@ In case you have more than one packages and you want to execute all tests of eve
 
     go test ./...
 
-with *./...* goes through each package and runs the test files.
+with ***./...*** goes through each package and runs the test files.
 Or if you need to test a particular package, just run the command
 
-    go test ***package name***
+    go test <package_name>
 
 ### Test Coverage <a name="tests_coverage"></a>
 
