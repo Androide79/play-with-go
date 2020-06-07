@@ -29,5 +29,7 @@ You can output print additional information about test function using verbose *-
 
     go test -v
 
+If you log something in your tests with the ***-v*** will be shown, otherwise no.
+
 ## AUTHOR <a name="author"></a>
 [Pierluigi D'Antona](https://www.pierluigidantona.it)
