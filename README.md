@@ -13,8 +13,13 @@ Simple project that show how build something with the GO langunage.
 ## REQUIREMENTS <a name="requirements"></a>
 
 - [GO](https://golang.org/) 1.14.4 (or greater)
+- [GO-GREETINGS](https://github.com/Androide79/go-greetings)
 
 ## HOW TO START <a name="how_to_start"></a>
+
+First you need to install the requirements, to do this type the command
+
+    go mod download
 
 To run the project go into *greetings* folder from terminal and type
 
