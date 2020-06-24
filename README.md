@@ -6,20 +6,36 @@ Simple project that show how build something with the GO langunage.
 
 * **[REQUIREMENTS](#requirements)**
 * **[HOW TO START](#how_to_start)**
+  * [Requirements Installation](#how_to_start_requirements_installation)
+  * [Environment Configuration](#how_to_start_environment_configuration)
+  * [Project Run](#how_to_start_project_run)
 * **[RUN TESTS](#tests)**
   * [Test Coverage](#tests_coverage)
+* **[APPENDIX](#appendix)**
+  * [.ENV File Configuration](#appendix_env_file_configuration)
 * **[AUTHOR](#author)**
 
 ## REQUIREMENTS <a name="requirements"></a>
 
 - [GO](https://golang.org/) 1.14.4 (or greater)
 - [GO-GREETINGS](https://github.com/Androide79/go-greetings)
+- [VIPER](https://github.com/spf13/viper)
 
 ## HOW TO START <a name="how_to_start"></a>
+
+### Requirements Installation <a name="how_to_start_requirements_installation"></a>
 
 First you need to install the requirements, to do this type the command
 
     go mod download
+
+### Environment Configuration <a name="how_to_start_environment_configuration"></a>
+
+GO lang provides several native and non-native tools to work with environment variables.
+In this project we will use the [Viper](https://github.com/spf13/viper) library to set the configuration parameters of the project within an *.env* file.
+In the project's root you'll find an *.env* in which is possibile to set some environment variables (for a detailed list of what can currently be configured using the *.env* file you can find it in the [Appendix](#appendix_env_file_configuration))
+
+### Project Run <a name="how_to_start_project_run"></a>
 
 To run the project go into *greetings* folder from terminal and type
 
@@ -61,6 +77,15 @@ To have a more human readable output we can use a built-in GO tool, which genera
     go tool cover -html=coverage.txt -o coverage.html
 
 using the TXT output, previously seen, creates a more readable HTML page.
+
+## APPENDIX <a name="appendix"></a>
+
+### .ENV File Configuration <a name="appendix_env_file_configuration"></a>
+
+| KEY | VALUE | REQUIRED | NOTE |
+| ------ | ------ | ------ | ------ |
+| NAME | string || The name that will be passed to receive a greet |
+
 
 ## AUTHOR <a name="author"></a>
 [Pierluigi D'Antona](https://www.pierluigidantona.it)
