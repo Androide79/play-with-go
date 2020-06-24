@@ -33,7 +33,7 @@ First you need to install the requirements, to do this type the command
 
 GO lang provides several native and non-native tools to work with environment variables.
 In this project we will use the [Viper](https://github.com/spf13/viper) library to set the configuration parameters of the project within an *.env* file.
-In the project's root you'll find an *.env* in which is possibile to set some environment variables (for a detailed list of what can currently be configured using the *.env* file you can find it in the [Appendix](#appendix_env_file_configuration))
+To use the *.env* file rename the ***.env_example*** file to ***.env*** (the file is located in the project root). In this file is possibile to set some environment variables (for a detailed list of what can currently be configured using the *.env* file you can find it in the [Appendix](#appendix_env_file_configuration))
 
 ### Project Run <a name="how_to_start_project_run"></a>
 
