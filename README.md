@@ -92,6 +92,7 @@ using the TXT output, previously seen, creates a more readable HTML page.
 | KEY | VALUE | REQUIRED | NOTE |
 | ------ | ------ | ------ | ------ |
 | NAME | string || The name that will be passed to receive a greet |
+| LANGUAGE | string || User language (it/fr/de/es) - default english |
 
 
 ## AUTHOR <a name="author"></a>
