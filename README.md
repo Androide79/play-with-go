@@ -9,6 +9,7 @@ Simple project that show how build something with the GO langunage.
   * [Requirements Installation](#how_to_start_requirements_installation)
   * [Environment Configuration](#how_to_start_environment_configuration)
   * [Project Run](#how_to_start_project_run)
+  * [Third-Party Packages Update](#third_party_packages_update)
 * **[RUN TESTS](#tests)**
   * [Test Coverage](#tests_coverage)
 * **[APPENDIX](#appendix)**
@@ -40,6 +41,12 @@ To use the *.env* file rename the ***.env_example*** file to ***.env*** (the fil
 To run the project go into *greetings* folder from terminal and type
 
     go run .
+
+### Third-Party Packages Update <a name="third_party_packages_update"></a>
+
+If you need to update third-party packages, which may have been updated over time, you will need to run the following command from the terminal
+
+    go get -u all
 
 ## RUN TESTS <a name="tests"></a>
 
