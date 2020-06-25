@@ -13,9 +13,8 @@ func main() {
 	// read config file
 	viper.ReadInConfig()
 
-	fmt.Println(">>> ", viper.GetString("NAME"))
+	var name string = viper.GetString("NAME")
+	var lang string = viper.GetString("LANGUAGE")
 
-	var name string = "Pigi"
-
-	fmt.Println(greetings.Greet(name))
+	fmt.Println(greetings.Greet(name, lang))
 }
