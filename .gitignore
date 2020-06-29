@@ -7,3 +7,6 @@ play-with-go
 
 ### ENVIRONMENT ###
 .env
+
+### LOG ###
+*.log
