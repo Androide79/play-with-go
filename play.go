@@ -1,8 +1,13 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+<<<<<<< HEAD
 	"os"
+=======
+	"net/http"
+>>>>>>> 551e0f3... [WIP] get covid data
 
 	greetings "github.com/Androide79/go-greetings"
 	log "github.com/sirupsen/logrus"
@@ -22,9 +27,34 @@ func main() {
 	var name string = viper.GetString("NAME")
 	log.Infof("'name' variable init with '%v' value", name)
 	var lang string = viper.GetString("LANGUAGE")
+<<<<<<< HEAD
 	log.Infof("'lang' variable init with '%v' value", lang)
+=======
+	var covidURL string = viper.GetString("URL_COVID")
+>>>>>>> 551e0f3... [WIP] get covid data
 
 	fmt.Println(greetings.Greet(name, lang))
+
+	// make an HTTP request
+	response, err := http.Get(covidURL)
+	if err != nil {
+		// TODO: insert logging system to handle the prints
+		fmt.Printf("An error occurred: %v", err)
+	}
+
+	defer response.Body.Close()
+
+	// body, err := ioutil.ReadAll(response.Body)
+	// if err != nil {
+	// 	// TODO: insert logging system to handle the prints
+	// 	fmt.Printf("An error occurred: %v", err)
+	// }
+
+	var covidData map[string]interface{}
+
+	json.NewDecoder(response.Body).Decode(&covidData)
+
+	fmt.Println(covidData["records"])
 }
 
 func initLogger() {
