@@ -93,6 +93,7 @@ using the TXT output, previously seen, creates a more readable HTML page.
 | ------ | ------ | ------ | ------ |
 | NAME | string || The name that will be passed to receive a greet |
 | LANGUAGE | string || User language (it/fr/de/es) - default english |
+| LOG_FILE_NAME | string || The name for the log file |
 
 
 ## AUTHOR <a name="author"></a>
