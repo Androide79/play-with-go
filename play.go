@@ -11,13 +11,13 @@ import (
 
 func main() {
 
-	// init logger function
-	initLogger()
-
 	// set config file path
 	viper.SetConfigFile(".env")
 	// read config file
 	viper.ReadInConfig()
+
+	// init logger function
+	initLogger()
 
 	var name string = viper.GetString("NAME")
 	log.Infof("'name' variable init with '%v' value", name)
@@ -28,9 +28,8 @@ func main() {
 }
 
 func initLogger() {
-
 	// choose logger file
-	file, err := os.OpenFile("play.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
+	file, err := os.OpenFile(viper.GetString("LOG_FILE_NAME"), os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
 
 	if err != nil {
 		log.Fatal(err)
