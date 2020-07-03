@@ -3,11 +3,8 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-<<<<<<< HEAD
-	"os"
-=======
 	"net/http"
->>>>>>> 551e0f3... [WIP] get covid data
+	"os"
 
 	greetings "github.com/Androide79/go-greetings"
 	log "github.com/sirupsen/logrus"
@@ -27,11 +24,8 @@ func main() {
 	var name string = viper.GetString("NAME")
 	log.Infof("'name' variable init with '%v' value", name)
 	var lang string = viper.GetString("LANGUAGE")
-<<<<<<< HEAD
 	log.Infof("'lang' variable init with '%v' value", lang)
-=======
 	var covidURL string = viper.GetString("URL_COVID")
->>>>>>> 551e0f3... [WIP] get covid data
 
 	fmt.Println(greetings.Greet(name, lang))
 
